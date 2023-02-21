@@ -1,0 +1,60 @@
+@import './normalize.css';
+
+@font-face {
+    font-family: 'genshin';
+    src: URL('../fonts/zh-cn.ttf') format('truetype');
+}
+
+:root {
+
+    --white: #fff;
+    --black: #000;
+    --text-color: #807e7e;
+    --border-color: #d1dae0;
+    --fainter-border-color: #f0f0f0;
+    --search-input-height: 45px;
+    --hightlight-text: #E55472;
+    --box-shadow-1: 0 1px 2px #e0e0e0;
+    --box-shadow-2: 0 1px 6px 0 rgba(32, 33, 36, .28);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'genshin', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed; 
+    color: var(--text-color);
+}
+
+button,
+input,
+[tabindex] {
+    border: none;
+    outline: none;
+}
+
+button {
+    background-color: transparent;
+}
+
+a[href] {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+    margin-bottom: 0;
+    padding: 0;
+}
+
