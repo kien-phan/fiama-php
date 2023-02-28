@@ -1,42 +1,61 @@
 <?php $this->view("fiama/header", $data); ?>
-      
-      <!-- MAIN -->
-      <main role="main">
-        <!-- Content -->
-        <article>
-          <header class="section background-white">
-            <div class="line text-center">        
-              <h1 class="text-dark text-s-size-30 text-m-size-40 text-l-size-headline text-thin text-line-height-1">Be More with Less</h1>
-              <p class="margin-bottom-0 text-size-16 text-dark">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.<br>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
-            </div>  
-          </header>
 
-          <div class="background-white full-width"> 
-          <?php if(is_array($data['posts'])): ?>
-            <?php foreach($data['posts'] as $row): ?>
-                <div class="s-12 m-6 l-five">
-                  <a class="image-with-hover-overlay image-hover-zoom" href="<?= ROOT . 'single_post/' . $row->url_address; ?>" title="Portfolio Image">
-                    <div class="image-hover-overlay background-primary"> 
-                      <div class="image-hover-overlay-content text-center padding-2x">
-                        <h3 class="text-white text-size-20 margin-bottom-10"><?= $row->title?></h3>
-                        <p class="text-white text-size-14 margin-bottom-20"><?= $row->description?></p>  
-                      </div> 
-                    </div> 
-                    <img class="full-img" src="<?= ROOT . $row->image ?>" alt=""/>
-                  </a>	
-                </div>
-            <?php endforeach; ?>  
-            <?php endif;?>  
+<section class="Home-slider">
+  <div id="HomeCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#HomeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#HomeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item">
+        <div class="Home-slider-carousel-item-img" style="background-image: url('<?= ASSETS ?>img/slider/1.jpg')"></div>
+        <div class="Home-slider-carousel-item-info">
+          <h1 class="Home-slider-carousel-item-info-header">Fresh Flower</h1>
+          <h6 class="Home-slider-carousel-item-info-sub-header">Natural & Beautiful Flower Here</h6>
+          <div class="Home-slider-carousel-item-info-p-wrapper">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
           </div>
-        </article>
+          <div class="Home-slider-carousel-item-info-button-wrapper">
+            <button class="Home-slider-carousel-item-info-button">Shop Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="Home-slider-carousel-item-img" style="background-image: url('<?= ASSETS ?>img/slider/3.jpg')"></div>
+        <div class="Home-slider-carousel-item-info">
+          <h1 class="Home-slider-carousel-item-info-header">Fresh Flower</h1>
+          <h6 class="Home-slider-carousel-item-info-sub-header">Natural & Beautiful Flower Here</h6>
+          <div class="Home-slider-carousel-item-info-p-wrapper">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+          </div>
+          <div class="Home-slider-carousel-item-info-button-wrapper">
+            <button class="Home-slider-carousel-item-info-button">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev Home-slider-carousel-prev-btn" type="button" data-bs-target="#HomeCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next Home-slider-carousel-next-btn" type="button" data-bs-target="#HomeCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+<section class="Home-feature">
 
-        <section>
-          <a href="<?=$data['prev_page'] ?>"><input class="s-12 submit-form button background-primary text-white" style="width: 200px;" type="button" value="Prev"></a>
-          <a href="<?=$data['next_page'] ?>"><input class="s-12 submit-form button background-primary text-white" style="width: 200px; float: right;" type="button" value="Prev"></a>
-        </section>
-      </main>
+</section>
+<section class="Home-banner"></section>
+<section class="Home-new-item"></section>
+<section class="Home-banner"></section>
+<section class="Home-top-products"></section>
+<section class="Home-banner"></section>
+<section class="Home-brand-logo"></section>
 
-      <?php $this->view("fiama/footer", $data); ?>
-      
-      
+<!-- //SCRIPT -->
+<script>
+  
+</script>
+<?php $this->view("fiama/footer", $data); ?>

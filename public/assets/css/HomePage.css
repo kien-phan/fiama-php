@@ -1,0 +1,128 @@
+.Home-slider-carousel-item-img {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    min-height: 700px;
+}
+
+.Home-slider-carousel-prev-btn {
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: #b4b4b4;
+    border: 1px solid var(--white);
+    background-color: transparent;
+    visibility: hidden;
+    transition: all ease .3s;
+}
+
+.Home-slider-carousel-next-btn {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%) !important;
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: #b4b4b4;
+    border: 1px solid var(--white);
+    background-color: transparent;
+    visibility: hidden;
+    transition: all ease .3s;
+}
+
+.Home-slider-carousel-prev-btn:hover,
+.Home-slider-carousel-next-btn:hover {
+    background-color: var(--hightlight-text);
+    border-color: var(--hightlight-text);
+    color: var(--white);
+}
+
+#HomeCarousel:hover .Home-slider-carousel-prev-btn {
+    left: 20px;
+    opacity: 1;
+    visibility: visible;
+}
+
+#HomeCarousel:hover .Home-slider-carousel-next-btn {
+    right: 20px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    color: #b4b4b4;
+
+}
+
+.Home-slider-carousel-item-info {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    max-width: 850px;
+    opacity: 0;
+    transition: all ease .5s;
+    visibility: hidden;
+}
+
+.Home-slider-carousel-item-info-header {
+    font-size: 7rem;
+    line-height: 1;
+    color: var(--black);
+    font-weight: 700;
+    margin: 0 0 15px 0;
+}
+
+.Home-slider-carousel-item-info-sub-header {
+    position: relative;
+    font-size: 2.2rem;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+.Home-slider-carousel-item-info-sub-header::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 90px;
+    height: 2px;
+    background-color: var(--hightlight-text);
+}
+
+.Home-slider-carousel-item-info-p-wrapper {
+    max-width: 450px;
+}
+
+.Home-slider-carousel-item-info-button-wrapper {
+    margin-top: 30px;
+}
+
+.Home-slider-carousel-item-info-button {
+    padding: 13px 40px 13px 40px;
+    background-color: var(--hightlight-text);
+    color: var(--white);
+    border-radius: 50px;
+}
+
+.Home-slider-carousel-item-info-button:hover {
+    background-color: #434343;
+}
+
+.carousel-item.active .Home-slider-carousel-item-info {
+    transform: translateY(-50%);
+    opacity: 1;
+    visibility: visible;
+}
+

@@ -1,0 +1,36 @@
+@media (max-width: 1200px) {
+    .Home-slider-carousel-item-img {
+        min-height: 583px;
+    }
+    .Home-slider-carousel-item-info {
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Home-slider-carousel-item-img {
+        min-height: 400px
+    }
+    .Home-slider-carousel-item-info {
+        max-width: 690px;
+    }
+    .Home-slider-carousel-item-info-header {
+        font-size: 3.6rem;
+    }
+    .Home-slider-carousel-item-info-sub-header {
+        font-size: 1.6rem;
+    }
+    .Home-slider-carousel-item-info-p-wrapper {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .Home-slider-carousel-item-info {
+        max-width: 400px;
+    }
+
+    .Home-slider-carousel-item-info-p-wrapper {
+        max-width: 400px;
+    }
+}

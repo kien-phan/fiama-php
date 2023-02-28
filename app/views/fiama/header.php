@@ -12,6 +12,9 @@
   <!-- CSS -->
   <link rel="stylesheet" href="<?= ASSETS ?>css/GlobalStyle.css" type="text/css">
   <link rel="stylesheet" href="<?= ASSETS ?>css/Header.css" type="text/css">
+  <link rel="stylesheet" href="<?= ASSETS ?>css/Footer.css" type="text/css">
+  <link rel="stylesheet" href="<?= ASSETS ?>css/HomePage.css" type="text/css">
+  <link rel="stylesheet" href="<?= ASSETS ?>css/responsive.css" type="text/css">
   <!-- icons -->
   <link rel="stylesheet" href="<?= ASSETS ?>icons/vuesax-icon-main/style.css" type="text/css">
   <link rel="stylesheet" href="<?= ASSETS ?>icons/font-apicon-master/css/style.css" type="text/css">
@@ -19,8 +22,8 @@
 
 </head>
 
-<body>
-  <header class="Header_wrapper">
+<body class="body">
+  <header class="Header_wrapper" id="top">
     <div class="Header-middle-area">
       <div class="container">
         <div class="row d-flex justify-content-xl-between justify-content-center">
@@ -177,9 +180,9 @@
       <div class="Header-cart-side-bar-cart">
         <ul class="Header-cart-side-bar-cart-list">
           <li class="Header-cart-side-bar-cart-item">
-            <a href="" class="Header-cart-side-bar-cart-item-link d-flex">
+            <a href="" class="Header-cart-side-bar-cart-item-link d-flex mb-4">
               <div class="Header-cart-side-bar-cart-item-img-wrapper">
-                <img src="<?=ASSETS?>img/product/1.png" alt="" class="Header-cart-side-bar-cart-item-img">
+                <img src="<?= ASSETS ?>img/product/1.png" alt="" class="Header-cart-side-bar-cart-item-img">
                 <button class="Header-cart-side-bar-cart-item-delete-button">
                   <i class="-ap icon-trash Header-cart-side-bar-cart-item-delete-icon"></i>
                 </button>
@@ -195,9 +198,63 @@
             </a>
           </li>
           <li class="Header-cart-side-bar-cart-item">
-            <a href="" class="Header-cart-side-bar-cart-item-link d-flex">
+            <a href="" class="Header-cart-side-bar-cart-item-link d-flex mb-4">
               <div class="Header-cart-side-bar-cart-item-img-wrapper">
-                <img src="<?=ASSETS?>img/product/1.png" alt="" class="Header-cart-side-bar-cart-item-img">
+                <img src="<?= ASSETS ?>img/product/1.png" alt="" class="Header-cart-side-bar-cart-item-img">
+                <button class="Header-cart-side-bar-cart-item-delete-button">
+                  <i class="-ap icon-trash Header-cart-side-bar-cart-item-delete-icon"></i>
+                </button>
+              </div>
+              <div class="Header-cart-side-bar-cart-item-info">
+                <div class="Header-cart-side-bar-cart-item-info-name">Prenium Joyful</div>
+                <div class="Header-cart-side-bar-cart-item-info-amount-price-wrapper">
+                  <span class="Header-cart-side-bar-cart-item-info-amount">6</span>
+                  x
+                  <span class="Header-cart-side-bar-cart-item-info-price">9</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="Header-cart-side-bar-cart-item">
+            <a href="" class="Header-cart-side-bar-cart-item-link d-flex mb-4">
+              <div class="Header-cart-side-bar-cart-item-img-wrapper">
+                <img src="<?= ASSETS ?>img/product/1.png" alt="" class="Header-cart-side-bar-cart-item-img">
+                <button class="Header-cart-side-bar-cart-item-delete-button">
+                  <i class="-ap icon-trash Header-cart-side-bar-cart-item-delete-icon"></i>
+                </button>
+              </div>
+              <div class="Header-cart-side-bar-cart-item-info">
+                <div class="Header-cart-side-bar-cart-item-info-name">Prenium Joyful</div>
+                <div class="Header-cart-side-bar-cart-item-info-amount-price-wrapper">
+                  <span class="Header-cart-side-bar-cart-item-info-amount">6</span>
+                  x
+                  <span class="Header-cart-side-bar-cart-item-info-price">9</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="Header-cart-side-bar-cart-item">
+            <a href="" class="Header-cart-side-bar-cart-item-link d-flex mb-4">
+              <div class="Header-cart-side-bar-cart-item-img-wrapper">
+                <img src="<?= ASSETS ?>img/product/1.png" alt="" class="Header-cart-side-bar-cart-item-img">
+                <button class="Header-cart-side-bar-cart-item-delete-button">
+                  <i class="-ap icon-trash Header-cart-side-bar-cart-item-delete-icon"></i>
+                </button>
+              </div>
+              <div class="Header-cart-side-bar-cart-item-info">
+                <div class="Header-cart-side-bar-cart-item-info-name">Prenium Joyful</div>
+                <div class="Header-cart-side-bar-cart-item-info-amount-price-wrapper">
+                  <span class="Header-cart-side-bar-cart-item-info-amount">6</span>
+                  x
+                  <span class="Header-cart-side-bar-cart-item-info-price">9</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="Header-cart-side-bar-cart-item">
+            <a href="" class="Header-cart-side-bar-cart-item-link d-flex mb-4">
+              <div class="Header-cart-side-bar-cart-item-img-wrapper">
+                <img src="<?= ASSETS ?>img/product/1.png" alt="" class="Header-cart-side-bar-cart-item-img">
                 <button class="Header-cart-side-bar-cart-item-delete-button">
                   <i class="-ap icon-trash Header-cart-side-bar-cart-item-delete-icon"></i>
                 </button>
@@ -216,11 +273,12 @@
       </div>
       <div class="Header-cart-side-bar-footer mt-5">
         <div class="Header-cart-side-bar-footer-sub-tootal d-flex justify-content-between align-items-center">
-          <div class="Header-cart-side-bar-footer-sub-total-text">Subtotal</div>
+          <div class="Header-cart-side-bar-footer-sub-total-text">Subtotal:</div>
           <div class="Header-cart-side-bar-footer-sub-total-money">$310.00</div>
         </div>
-        <div class="Header-cart-side-bar-footer-button-wrapper">
-          
+        <div class="Header-cart-side-bar-footer-button-wrapper d-flex justify-content-between">
+          <button class="Header-cart-side-bar-footer-button-view-cart">VIEW CART</button>
+          <button class="Header-cart-side-bar-footer-button-checkout">CHECKOUT</button>
         </div>
         <p>Free Shipping on All Orders Over $100!</p>
       </div>
@@ -228,6 +286,10 @@
   </div>
 
   <div class="Header-overlay" id="overlay"></div>
+
+  <div class="Header-scroll-to-top" onclick="toTop()" id="Header-scroll-to-top">
+    <i class="Header-scroll-to-top-icon isax-arrow-up-11"></i>
+  </div>
 
   <script>
     const overlayElement = document.getElementById('overlay')
@@ -253,13 +315,31 @@
       headerSidebarElement.classList.toggle('Header-menu-open')
     })
 
-    headerCartElement.addEventListener('click', function () {
+    headerCartElement.addEventListener('click', function() {
       overlayElement.classList.toggle('overlay-active')
       headerCartSideBarElement.classList.toggle('Header-cart-side-bar-open')
     })
 
-    headerCartSideBarButtonCloseElement.addEventListener('click', function () {
+    headerCartSideBarButtonCloseElement.addEventListener('click', function() {
       overlayElement.classList.toggle('overlay-active')
       headerCartSideBarElement.classList.toggle('Header-cart-side-bar-open')
     })
+  </script>
+
+  <!-- scroll to top -->
+  <script>
+    const scrollTopButtonElement = document.getElementById('Header-scroll-to-top')
+
+    window.onscroll = function() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollTopButtonElement.style.display = "block";
+      } else {
+        scrollTopButtonElement.style.display = "none";
+      }
+    }
+
+    function toTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
   </script>

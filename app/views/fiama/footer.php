@@ -1,60 +1,97 @@
 <!-- FOOTER -->
-<footer>
-        <!-- Contact Us -->
-        <div class="background-dark padding text-center footer-social">
-          <a class="margin-right-10" target="_blank" href="https://www.facebook.com"><i class="icon-facebook_circle text-size-30"></i> <span class="text-strong text-white hide-s hide-m">FACEBOOK</span></a>
-          <a class="margin-right-10" target="_blank" href="https://www.twitter.com"><i class="icon-twitter_circle text-size-30"></i> <span class="text-strong text-white hide-s hide-m">TWITTER</span></a>
-          <a class="margin-right-10" target="_blank" href="https://www.instagram.com"><i class="icon-instagram_circle text-size-30"></i> <span class="text-strong text-white hide-s hide-m">INSTAGRAM</span></a>
-          <a target="_blank" href="https://www.linkedin.com"><i class="icon-linked_in_circle text-size-30"></i> <span class="text-strong text-white hide-s hide-m">LINKEDIN</span></a>                                                                         
+<footer class="Footer-wrapper">
+  <div class="Footer-top-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-6 col-xl-2 Footer-top-col-margin">
+          <div class="Footer-top-col-header">MY ACCOUNT</div>
+          <ul class="Footer-top-col-list">
+            <li class="Footer-top-col-item"><a href="">My account</a></li>
+            <li class="Footer-top-col-item"><a href="">Checkout</a></li>
+            <li class="Footer-top-col-item"><a href="">Contact us</a></li>
+            <li class="Footer-top-col-item"><a href="">Shopping Cart</a></li>
+            <li class="Footer-top-col-item"><a href="">Wishlist</a></li>
+          </ul>
         </div>
-
-        <!-- Main Footer -->
-        <section class="section-small-padding text-center background-dark full-width">
-          <div class="line">
-            <div class="margin">
-              <!-- Collumn 1 -->              
-              <div class="s-12 m-12 l-4 margin-m-bottom-30">
-                <h3 class="text-size-16">Company Address</h3>
-                <p class="text-size-14">
-                   Responsive Street 7<br>
-                   London - United Kingdom<br> 
-                   Europe
-                </p>               
-              </div>
-              <!-- Collumn 2 -->
-              <div class="s-12 m-12 l-4 margin-m-bottom-30">
-                <h3 class="text-size-16">E-mail</h3>
-                <p class="text-size-14">
-                   contact@sampledomain.com<br>
-                   office@sampledomain.com
-                </p>              
-              </div>
-              <!-- Collumn 3 -->
-              <div class="s-12 m-12 l-4 ">
-                <h3 class="text-size-16">Phone Numbers</h3>
-                <p class="text-size-14">
-                   0800 4521 800 50<br>
-                   0450 5896 625 16<br>
-                   0798 6546 465 15
-                </p>             
-              </div>
-            </div>
-          </div>  
-        </section>
-        <hr class="break margin-top-bottom-0" style="border-color: rgba(0, 0, 0, 0.80);">
-        
-        <!-- Bottom Footer -->
-        <section class="padding background-dark full-width">
-          <div class="text-center">
-            <p class="text-size-12">Copyright 2019, Vision Design - graphic zoo</p>
-            <p class="text-size-12">All images is purchased from Bigstock. Do not use the images in your website.</p>
+        <div class="col-12 col-sm-6 col-md-6 col-xl-2 Footer-top-col-margin">
+          <div class="Footer-top-col-header">QUICK LINKS</div>
+          <ul class="Footer-top-col-list">
+            <li class="Footer-top-col-item"><a href="">Store Location</a></li>
+            <li class="Footer-top-col-item"><a href="">Orders Tracking</a></li>
+            <li class="Footer-top-col-item"><a href="">Size Guide</a></li>
+            <li class="Footer-top-col-item"><a href="">My account Cart</a></li>
+            <li class="Footer-top-col-item"><a href="">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-xl-2 Footer-top-col-margin">
+          <div class="Footer-top-col-header">INFOMATION</div>
+          <ul class="Footer-top-col-list">
+            <li class="Footer-top-col-item"><a href="">Privacy Page</a></li>
+            <li class="Footer-top-col-item"><a href="">About us</a></li>
+            <li class="Footer-top-col-item"><a href="">Careers</a></li>
+            <li class="Footer-top-col-item"><a href="">Delivery Infomation</a></li>
+            <li class="Footer-top-col-item"><a href="">Term & Conditions</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-xl-2 Footer-top-col-margin">
+          <div class="Footer-top-col-header">CUSTOMER SERVICE</div>
+          <ul class="Footer-top-col-list">
+            <li class="Footer-top-col-item"><a href="">Shipping Policy</a></li>
+            <li class="Footer-top-col-item"><a href="">Help & Contact Us</a></li>
+            <li class="Footer-top-col-item"><a href="">Returns & Refunds</a></li>
+            <li class="Footer-top-col-item"><a href="">Online Stores</a></li>
+            <li class="Footer-top-col-item"><a href="">Term and Conditions</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-xl-4">
+          <div class="Footer-top-col-header">ABOUT OUR SHOP</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo incididunt ut labore et dolore</p>
+          <div class="Footer-top-address-wrapper">
+            <ul>
+              <li class="d-flex">
+                <div class="Footer-top-address-icon-wrapper"><i class="isax-location1"></i></div>
+                <div class="Footer-top-address-text-wrapper">
+                  <p class="Footer-top-address-text">Brooklyn, New York, United States</p>
+                </div>
+              </li>
+              <li class="d-flex">
+                <div class="Footer-top-address-icon-wrapper"><i class="-ap icon-phone-handset"></i></div>
+                <div class="Footer-top-address-text-wrapper">
+                  <a href="tel:+0123456789" class="Footer-top-address-text Footer-top-address-phone">+0123-456789</a>
+                </div>
+              </li>
+              <li class="d-flex">
+                <div class="Footer-top-address-icon-wrapper"><i class="-ap icon_fluent_mail_24_regular"></i></div>
+                <div class="Footer-top-address-text-wrapper">
+                  <p class="Footer-top-address-text Footer-top-address-email">example@example.com</p>
+                </div>
+              </li>
+            </ul>
           </div>
-        </section>
-      </footer>
+          <div class="Footer-top-payment">
+            <img src="<?=ASSETS?>img/footer/payment-icons.png" alt="">
+          </div>
+        </div>
+      </div>
     </div>
-    <script type="text/javascript" src="<?= ASSETS?>js/response.js"></script>
-    <script type="text/javascript" src="<?= ASSETS?>js/jquery.events.touch.js"></script>
-    <script type="text/javascript" src="<?= ASSETS?>owl-carousel/owl.carousel.js"></script>
-    <script type="text/javascript" src="<?= ASSETS?>js/template-scripts.js"></script> 
+  </div>
+  <div class="Footer-bottom-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-12 Footer-bottom-area-text-wrapper text-center text-md-start">
+          <p>© 2023 - JUST FOR YOU</p>
+        </div>
+        <div class="col-md-6 col-12 Footer-bottom-area-icon-wrapper d-flex justify-content-md-start justify-content-center">
+          <ul class="Footer-bottom-area-icon-list d-flex justify-content-center">
+            <li><i class="-ap icon-ion-social-facebook Footer-bottom-area-icon"></i></li>
+            <li><i class="-ap icon-twitter4 Footer-bottom-area-icon"></i></li>
+            <li><i class="-ap icon-pinterest Footer-bottom-area-icon"></i></li>
+            <li><i class="-ap icon-instagram Footer-bottom-area-icon"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
   </body>
-</html>
+
+  </html>
